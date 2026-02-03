@@ -9,6 +9,7 @@
 
 <html class="theme-auto" lang="en"> <!-- Update`class="theme-auto" with your preference -->
 
+  
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,15 +40,44 @@
     <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
          Remove comments if you've added LittleLink Extended dependencies -->
 
+<!-- Language Switcher Styles -->
+<style>
+  .language-switcher {
+    text-align: center;
+    padding: 15px 0;
+    margin-bottom: 40px;
+  }
+  .language-switcher a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    color: inherit;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+  .language-switcher a:hover {
+    opacity: 1;
+  }
+  .language-switcher .current {
+    font-weight: bold;
+    opacity: 1;
+    border-bottom: 2px solid currentColor;
+  }
+</style>
+    
   </head>
 
 <body>
 
     <div class="container">
         <div class="column">
+
+          <!-- Language Switcher -->
           <div class="language-switcher">
              <a href="index.html">🇩🇪 Deutsch</a> | <a href="en.html" class="current">🇬🇧 English</a>
           </div>
+          
             <!--
               By default, the Avatar is rounded. Use the following:
               - avatar--rounded: Automatically rounds the image
